@@ -8,9 +8,9 @@ async function PostPages() {
   const posts = await loadPost();
   console.log(posts);
   return (<div>
-            <p>Posts2</p>
+            <p>Posts3</p>
             {
-                /*posts.map(post => {
+                posts.map(post => 
                     <>
                     <h1>hola</h1>
                     <div key={post.userId}>
@@ -18,7 +18,7 @@ async function PostPages() {
                         <p>{post.body}</p>
                     </div>
                     </>
-                })*/
+                )
 
             }
         </div>);
