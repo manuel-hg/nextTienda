@@ -4,12 +4,18 @@ import Link from "next/link";
 export default function PostCard({ post }) {
   return (
     <>
-      <div>
+      <div className="bg-gray-950 p-10">
         <Link href={`/posts/${post.id}`}>
-            <h3>{post.title}</h3>
+          <h3 className="text-xl font-bold mb-4">{post.title}</h3>
         </Link>
-        <p>{post.body}</p>
-        <button onClick={() => {alert('click')}}>click</button>
+        <p className="text-slate-300">{post.body}</p>
+        <button
+          onClick={() => {
+            alert("click");
+          }}
+        >
+          click
+        </button>
       </div>
     </>
   );
