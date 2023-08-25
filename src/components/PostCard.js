@@ -1,7 +1,10 @@
 "use client";
 import Link from "next/link";
+import { useParams } from "next/navigation";
 
 export default function PostCard({ post }) {
+  const params = useParams();
+
   return (
     <>
       <div className="bg-gray-950 p-10">
